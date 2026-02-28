@@ -24,7 +24,7 @@ Junior LLM Engineer.
 ![XGBoost](https://img.shields.io/badge/XGBoost-1F8ACB?style=for-the-badge)
 ![CatBoost](https://img.shields.io/badge/CatBoost-FFCC00?style=for-the-badge)
 ![OpenRouter](https://img.shields.io/badge/OpenRouter-4B6BFB?style=for-the-badge)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge)
+![vLLM](https://img.shields.io/badge/vLLM-2E7D32?style=for-the-badge)
 
 **RAG / Backend / Data**
 
