@@ -26,7 +26,7 @@ Junior LLM Engineer.
 ![OpenRouter](https://img.shields.io/badge/OpenRouter-4B6BFB?style=for-the-badge)
 ![vLLM](https://img.shields.io/badge/vLLM-2E7D32?style=for-the-badge)
 
-**RAG / Backend / Data**
+**Backend / Data**
 
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
