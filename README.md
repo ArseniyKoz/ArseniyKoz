@@ -50,7 +50,7 @@ Junior LLM Engineer.
 | Проект | Описание | Стек |
 |---|---|---|
 | [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Тестовый стенд для исследований oversampling с упором на воспроизводимость, конфиги и контроль data leakage в CV. | Python, scikit-learn, ClearML, NumPy, Pandas |
-| [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) | Декодировщик азбуки Морзе из `.opus` (CNN+RNN/CTC), по CV: Levenshtein distance = 1.28. | PyTorch, Librosa, NumPy, Pandas |
+| [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) | Декодировщик азбуки Морзе из `.opus` (CNN+RNN/CTC), Levenshtein distance = 1.28. | PyTorch, Librosa, NumPy, Pandas |
 | [nn-image-classification-transfer-learning](https://github.com/ArseniyKoz/nn-image-classification-transfer-learning) | Эксперименты по классификации изображений, подбор архитектур и гиперпараметров. | PyTorch, TorchVision |
 | [nn-lstm-dostoevsky-text-generation](https://github.com/ArseniyKoz/nn-lstm-dostoevsky-text-generation) | Генерация текста на основе LSTM. | PyTorch, NLP |
 | [nn-mnist-gan](https://github.com/ArseniyKoz/nn-mnist-gan) | GAN-подход для генерации изображений на MNIST. | PyTorch |
