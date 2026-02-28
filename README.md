@@ -1,14 +1,11 @@
 # Арсений Кожин
 
-Junior Data Scientist (NLP/DS, classic ML, DL) из Вологды.  
-Строю воспроизводимые ML-пайплайны, работаю с метриками и эксперимент-менеджментом.
+Junior LLM Engineer.  
+Строю воспроизводимые LLM-пайплайны, оптимизирую работу с данными, работаю с метриками и эксперимент-менеджментом.
 
 ## Профиль
 
 - Образование: Вологодский государственный университет, Прикладная математика и информатика (2022-2026)
-- Цель: Junior Data Scientist
-- Практика: СберТех, Java/Spring Boot, командная разработка с Git (02.2024-08.2024)
-- Языки: Русский (native), English (B2)
 
 ## Технологический стек
 
@@ -42,13 +39,7 @@ Junior Data Scientist (NLP/DS, classic ML, DL) из Вологды.
 - IT-Хакатон от Сбера: 2 место (2024)
 - ICPC: четвертьфинал, диплом 3 степени (2024)
 
-## GitHub-статистика
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ArseniyKoz&show_icons=true&hide_title=true&rank_icon=github)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ArseniyKoz&layout=compact)
-
 ## Контакты
 
 - Email: [arseniykozhin@gmail.com](mailto:arseniykozhin@gmail.com)
 - Telegram: [@rssk1n](https://t.me/rssk1n)
-- GitHub: [ArseniyKoz](https://github.com/ArseniyKoz)
