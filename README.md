@@ -1,70 +1,46 @@
 # Arseniy Kozhin
 
-Junior LLM Engineer.  
-Строю воспроизводимые LLM-пайплайны, оптимизирую работу с данными, работаю с метриками и эксперимент-менеджментом.
+LLM/RAG Engineer. I own product logic and quality for agentic RAG workflows: agent behavior, tool routing, retrieval, final-answer quality, evals, observability and delivery.
 
-## Профиль
+Currently working in the GenAI Lab at NPK "Electrostal". My main focus is RuCortex: a private FastAPI backend for RAG/agent workflows with Qdrant, OpenWebUI, LiteLLM, Langfuse, Docker and benchmark tooling.
 
-- Текущая роль: LLM Engineer, Лаборатория GenAI НПК "Электросталь" (2025 - настоящее время)
-- Образование: Вологодский государственный университет, Прикладная математика и информатика (2022 - настоящее время)
+## What I Build
 
-## Технологический стек
+- Agentic RAG backends: query rewriting, RAG search tools, document fetch, streaming statuses, sources/citations and final-answer guardrails.
+- Evaluation loops: benchmark CLI/API/UI, Langfuse datasets/traces/scores, release-aware diagnostics and RCA for agent failures.
+- Developer tools for AI agents: MCP sidecars, Jupyter-backed code execution, artifact resources, smoke checks and execution guardrails.
 
-**Языки и база**
+## Selected Work
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-
-**ML / LLM**
-
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-1F8ACB?style=for-the-badge)
-![CatBoost](https://img.shields.io/badge/CatBoost-FFCC00?style=for-the-badge)
-![OpenRouter](https://img.shields.io/badge/OpenRouter-4B6BFB?style=for-the-badge)
-![vLLM](https://img.shields.io/badge/vLLM-2E7D32?style=for-the-badge)
-
-**Backend / Data**
-
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![FAISS](https://img.shields.io/badge/FAISS-008B8B?style=for-the-badge)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-
-**Инструменты и окружение**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-111111?style=for-the-badge&logo=linux&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![ClearML](https://img.shields.io/badge/ClearML-00AEEF?style=for-the-badge)
-![Vagrant](https://img.shields.io/badge/Vagrant-1868F2?style=for-the-badge&logo=vagrant&logoColor=white)
-
-## Избранные pet-проекты
-
-| Проект | Описание | Стек |
+| Project | What it is | Stack |
 |---|---|---|
-| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Тестовый стенд для исследований oversampling с упором на воспроизводимость, конфиги и контроль data leakage в CV. | Python, scikit-learn, ClearML, NumPy, Pandas |
-| [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) | Декодировщик азбуки Морзе из `.opus` (CNN+RNN/CTC), Levenshtein distance = 1.28. | PyTorch, Librosa, NumPy, Pandas |
-| [nn-image-classification-transfer-learning](https://github.com/ArseniyKoz/nn-image-classification-transfer-learning) | Эксперименты по классификации изображений, подбор архитектур и гиперпараметров. | PyTorch, TorchVision |
-| [nn-lstm-dostoevsky-text-generation](https://github.com/ArseniyKoz/nn-lstm-dostoevsky-text-generation) | Генерация текста на основе LSTM. | PyTorch, NLP |
-| [nn-mnist-gan](https://github.com/ArseniyKoz/nn-mnist-gan) | GAN-подход для генерации изображений на MNIST. | PyTorch |
-| [nn-mnist-dcgan](https://github.com/ArseniyKoz/nn-mnist-dcgan) | DCGAN-эксперименты и сравнение с базовым GAN. | PyTorch |
+| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | Dev-only HTTP MCP sidecar exposing `code_run` backed by persistent Jupyter kernels. Includes sessions, timeouts, output caps, artifact resources and result bundles. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
+| RuCortex backend_pipeline | Private work project: agentic RAG backend with ingestion, query API, OpenWebUI pipeline adapter, streaming responses, benchmark tooling and diagnostics. | Python, FastAPI, Qdrant, Docker, OpenWebUI, LiteLLM, Langfuse |
+| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Research bench for comparing SMOTE variants on imbalanced datasets with reproducible experiments and quality metrics. | Python, scikit-learn, imbalanced-learn, CatBoost/XGBoost |
+| GAN metrics research | Research on GAN quality metrics and OCR-oriented evaluation, later written up for a student scientific conference. | Python, PyTorch, NumPy, Pandas |
 
-## Достижения
+## Stack
 
-- ICPC: полуфинал, диплом 2 степени (2025)
-- ICPC: четвертьфинал, диплом 2 степени (2025)
-- Публикация в международной научно-практической конференции (2025)
-- IT-Хакатон от Сбера: 2 место (2024)
-- ICPC: четвертьфинал, диплом 3 степени (2024)
+**LLM/RAG/backend:** Python, FastAPI, Qdrant, OpenWebUI, LiteLLM, Langfuse, MCP, Jupyter, Docker, PostgreSQL, Redis, SSE/streaming, REST API.
 
-## Контакты
+**ML/data:** PyTorch, scikit-learn, NumPy, Pandas, CatBoost, XGBoost, ClearML, Matplotlib, Seaborn.
+
+**Other:** C++, Java, Git, Linux basics, pytest, LaTeX, SQL.
+
+## Background
+
+- LLM Engineer, GenAI Lab, NPK "Electrostal" (2025 - present).
+- Java Developer Intern, SberTech (February 2024 - August 2024).
+- BSc in Applied Mathematics, Vologda State University (2022 - 2026).
+
+## Achievements
+
+- ICPC: semifinal diploma, 2nd degree (2025).
+- ICPC: quarterfinal diploma, 2nd degree (2025).
+- Sber hackathon: 2nd place in Data Science track (2024).
+- Scientific publication on GAN quality metrics for text recognition (2025).
+
+## Contacts
 
 - Email: [arseniykozhin@gmail.com](mailto:arseniykozhin@gmail.com)
 - Telegram: [@rssk1n](https://t.me/rssk1n)
