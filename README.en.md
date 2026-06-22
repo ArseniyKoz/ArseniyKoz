@@ -2,105 +2,50 @@
 
 # Arseniy Kozhin
 
-I work at the intersection of LLM/RAG systems, backend engineering, and applied mathematics. I am most interested in systems where a model does more than return text: it searches sources, calls tools, writes traces, goes through evals, and leaves enough evidence to debug a bad answer later.
+LLM/RAG Engineer. I own product logic and quality for an agentic RAG backend: agent behavior, tool routing, retrieval, final answers, sources, evals, and observability.
 
-I currently work as an LLM Engineer in the GenAI Lab at NPK "Electrostal". I do not disclose internal product details in this public profile, but the public-safe description is: private RAG/agent platform, retrieval, tool routing, streaming responses, evals, observability, and behavior diagnostics.
+I currently work in the GenAI Lab at NPK "Electrostal". My main focus is RuCortex: a private FastAPI backend for RAG/agent workflows with Qdrant, OpenWebUI, LiteLLM, Langfuse, Docker, and benchmark tooling.
 
-## What I Like Building
+## Engineering Focus
 
-- RAG/agent backends where an answer has a traceable path: query rewrite, search, fetch, sources, tool calls, execution statuses, and final checks.
-- Evaluation loops for LLM systems: datasets, traces, scores, regression checks, and root-cause analysis for bad agent behavior.
-- Developer tools for AI agents: narrow MCP sidecars, controlled code execution, artifacts, and execution guardrails.
-- Numerical and ML experiments where reproducibility, tests, and honest limitations matter.
+- **Agentic RAG:** agent loop, retrieval orchestration, query rewrite, RAG search, document fetch, tool calling, streaming statuses, sources/citations, OpenWebUI integration.
+- **Eval / observability:** benchmark datasets, run profiles, Langfuse traces/datasets/scores, release-aware regression checks, and RCA for agent and RAG quality regressions.
+- **Backend / inference:** FastAPI, Qdrant, SSE streaming, Docker, LiteLLM routing, query service boundaries, and local experiments with vLLM/llama.cpp/Ollama-compatible inference.
 
-## Selected Work
+## Selected Projects
 
-### [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates)
+| Project | What it proves | Stack |
+|---|---|---|
+| RuCortex / backend_pipeline (private) | Agentic RAG backend: ingestion/query API, OpenWebUI adapter, tool-based agent loop, streaming, sources, and Langfuse tracing. My scope is agent logic, answer quality, eval/bench, and change diagnostics. | Python, FastAPI, Qdrant, Docker, OpenWebUI, LiteLLM, Langfuse, SSE |
+| RuCortex benchmark/eval loop | Evaluation loop for agentic RAG and direct RAG baseline: CLI/API/UI, profiles, Langfuse datasets/traces/scores, release_id, profile gates, compare, and RCA buckets. | Python, PostgreSQL, Langfuse, pytest, Node tests, browser UI |
+| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | Dev-only HTTP MCP sidecar: `code_run` backed by persistent Jupyter kernels, sessions, timeouts, output caps, artifact resources, and result bundles. A development helper, not a sandbox for untrusted code. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
+| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Research bench for comparing SMOTE variants: reproducible experiments, quality metrics, and result visualization. | Python, scikit-learn, imbalanced-learn, CatBoost, XGBoost |
+| GAN metrics research | Research on GAN quality metrics and OCR-oriented evaluation; later written up as a student scientific conference publication. | Python, PyTorch, NumPy, Pandas |
 
-Mathematical and engineering work on Monte Carlo methods for an exterior Dirichlet problem: Walk on Planes / Walk on Spheres, C++/Python implementation, CLI, tests, notebooks, and proof-oriented docs.
-
-What it shows: I can take a research algorithm beyond a notebook and support it with code, validation, documentation, and mode comparisons.
-
-Where to look: `docs/`, `external_wop_cpp/tests/`, `external_wop/tests/`, `compare_wop_cpp_rmax_modes.ipynb`.
-
-### [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench)
-
-A benchmark suite for comparing SMOTE-family oversampling methods on imbalanced binary classification tasks. It includes config-driven runs, local method implementations, pytest tests, data-leakage safety checks, and persisted run artifacts.
-
-What it shows: I can build a reproducible ML benchmark where results are backed by configs, tests, and saved artifacts.
-
-Where to look: `configs/`, `src/methods/classic/`, `tests/`, `pyproject.toml`.
-
-### [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor)
-
-A small MCP sidecar for local agent workflows: `code_run` on top of persistent Jupyter kernels, sessions, timeouts, output caps, and artifact resources.
-
-What it shows: interest in AI developer tooling and in giving agents a constrained executable environment.
-
-### [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder)
-
-An audio ML project for recognizing Morse code from `.opus` files. The focus is not a production service, but a full ML pass: audio preparation, baseline, CNN/RNN model, and quality evaluation.
+Earlier ML projects and coursework experiments are part of my history, but I do not place them next to my current RAG/eval/backend work.
 
 ## Stack
 
-**Languages and fundamentals**
+**LLM/RAG:** agentic RAG, ReAct-style loops, tool routing, query rewrite, citations, MCP, OpenWebUI, LiteLLM, Langfuse.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+**Backend:** Python, FastAPI, Qdrant, PostgreSQL, Redis, Docker, REST API, SSE/streaming, pytest.
 
-**LLM / RAG**
+**ML/data:** PyTorch, scikit-learn, NumPy, Pandas, CatBoost, XGBoost, ClearML, Matplotlib, Seaborn.
 
-![OpenWebUI](https://img.shields.io/badge/OpenWebUI-111111?style=for-the-badge)
-![LiteLLM](https://img.shields.io/badge/LiteLLM-2E6BFF?style=for-the-badge)
-![Langfuse](https://img.shields.io/badge/Langfuse-111111?style=for-the-badge)
-![MCP](https://img.shields.io/badge/MCP-5C2D91?style=for-the-badge)
-![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge)
-![vLLM](https://img.shields.io/badge/vLLM-2E7D32?style=for-the-badge)
+**Tools:** Git, Linux basics, SQL, Java, C++, LaTeX.
 
-**Backend / Data**
+## Experience and Education
 
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-02569B?style=for-the-badge)
-![SSE](https://img.shields.io/badge/SSE-FF6F00?style=for-the-badge)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-
-**ML / Data Science**
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![CatBoost](https://img.shields.io/badge/CatBoost-FFCC00?style=for-the-badge)
-![XGBoost](https://img.shields.io/badge/XGBoost-1F8ACB?style=for-the-badge)
-![ClearML](https://img.shields.io/badge/ClearML-00AEEF?style=for-the-badge)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
-![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge)
-
-**Tools and environment**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-111111?style=for-the-badge&logo=linux&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
-
-## Background
-
-- LLM Engineer, GenAI Lab, NPK "Electrostal" (2025 - present).
-- Java Developer Intern, SberTech (February 2024 - August 2024).
-- BSc in Applied Mathematics, Vologda State University (2022 - 2026).
+- **LLM Engineer, GenAI Lab, NPK "Electrostal"** - 2025 - present.
+- **Java Developer Intern, SberTech** - February 2024 - August 2024.
+- **BSc in Applied Mathematics, Vologda State University** - 2022 - 2026.
 
 ## Achievements
 
-- ICPC: semifinal diploma, 2nd degree (2025).
+- ICPC: Northern Eurasia semifinal diploma, 2nd degree (2025).
 - ICPC: quarterfinal diploma, 2nd degree (2025).
-- Publication at an international scientific-practical conference on GAN quality metrics for text recognition (2025).
-- Sber hackathon: 2nd place in Data Science track (2024).
-- ICPC: quarterfinal diploma, 3rd degree (2024).
+- Sber hackathon: 2nd place in the Data Science track (2024).
+- Scientific publication on GAN quality metrics for text recognition (2025).
 
 ## Contacts
 
