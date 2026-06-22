@@ -8,9 +8,11 @@ Agent Engineer/Researcher. Отвечаю за продуктовую логик
 
 ## Инженерный фокус
 
-- **Agentic RAG:** agent loop, retrieval orchestration, query rewrite, RAG search, document fetch, tool calling, streaming statuses, sources/citations, OpenWebUI integration.
-- **Eval / observability:** benchmark datasets, run profiles, Langfuse traces/datasets/scores, release-aware regression checks, RCA по деградациям агента и RAG-качества.
-- **Backend / inference:** FastAPI, Qdrant, SSE streaming, Docker, LiteLLM routing, query service boundaries, локальные эксперименты с vLLM/llama.cpp/Ollama-compatible inference.
+**Agent core / harness.** Я занимаюсь логикой agentic backend: как агент собирает контекст, выбирает инструменты, вызывает `query_rewrite`, `rag_search` и `document_fetch`, стримит статусы и возвращает ответ с источниками. Моя зона здесь - не только отдельные tools, а весь контур поведения: prompt contract, tool routing, ограничения на шаги агента, OpenWebUI-интеграция и developer harness, через который это можно проверять и отлаживать.
+
+**Eval / observation.** Я строю контур, который показывает, стал агент лучше или хуже после изменения. Это bench datasets, run profiles, regression checks, Langfuse traces/scores, сравнение запусков и RCA по провалам: неправильный tool path, слабый retrieval, плохая groundedness, latency или runtime error. Важная часть работы - сделать качество ответа наблюдаемым, а не оценивать его на глаз.
+
+**LLM inference.** Я работаю с тем, как модели подключаются и ведут себя в реальном backend: LiteLLM routing, streaming, TTFT, token usage, prompt-cache signals и локальные эксперименты с vLLM/llama.cpp/Ollama-compatible inference. Цель - понимать не только "какая модель отвечает", но и как ее latency, streaming behavior и routing влияют на агентный сценарий.
 
 ## Избранные проекты
 
