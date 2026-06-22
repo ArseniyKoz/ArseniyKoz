@@ -1,46 +1,48 @@
-# Arseniy Kozhin
+[Русский](./README.md) | [English](./README.en.md)
 
-LLM/RAG Engineer. I own product logic and quality for agentic RAG workflows: agent behavior, tool routing, retrieval, final-answer quality, evals, observability and delivery.
+# Арсений Кожин
 
-Currently working in the GenAI Lab at NPK "Electrostal". My main focus is RuCortex: a private FastAPI backend for RAG/agent workflows with Qdrant, OpenWebUI, LiteLLM, Langfuse, Docker and benchmark tooling.
+LLM/RAG Engineer. Отвечаю за продуктовую логику и качество agentic RAG workflows: поведение агента, маршрутизацию инструментов, retrieval, качество финального ответа, evals, observability и delivery.
 
-## What I Build
+Сейчас работаю в Лаборатории GenAI НПК "Электросталь". Основной фокус - RuCortex: приватный FastAPI backend для RAG/agent workflows с Qdrant, OpenWebUI, LiteLLM, Langfuse, Docker и benchmark tooling.
 
-- Agentic RAG backends: query rewriting, RAG search tools, document fetch, streaming statuses, sources/citations and final-answer guardrails.
-- Evaluation loops: benchmark CLI/API/UI, Langfuse datasets/traces/scores, release-aware diagnostics and RCA for agent failures.
-- Developer tools for AI agents: MCP sidecars, Jupyter-backed code execution, artifact resources, smoke checks and execution guardrails.
+## Что я строю
 
-## Selected Work
+- Agentic RAG backends: query rewriting, RAG search tools, document fetch, streaming statuses, sources/citations и guardrails для финального ответа.
+- Evaluation loops: benchmark CLI/API/UI, Langfuse datasets/traces/scores, release-aware diagnostics и RCA для agent failures.
+- Developer tools для AI agents: MCP sidecars, Jupyter-backed code execution, artifact resources, smoke checks и execution guardrails.
 
-| Project | What it is | Stack |
+## Избранные работы
+
+| Проект | Что это | Стек |
 |---|---|---|
-| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | Dev-only HTTP MCP sidecar exposing `code_run` backed by persistent Jupyter kernels. Includes sessions, timeouts, output caps, artifact resources and result bundles. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
-| RuCortex backend_pipeline | Private work project: agentic RAG backend with ingestion, query API, OpenWebUI pipeline adapter, streaming responses, benchmark tooling and diagnostics. | Python, FastAPI, Qdrant, Docker, OpenWebUI, LiteLLM, Langfuse |
-| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Research bench for comparing SMOTE variants on imbalanced datasets with reproducible experiments and quality metrics. | Python, scikit-learn, imbalanced-learn, CatBoost/XGBoost |
-| GAN metrics research | Research on GAN quality metrics and OCR-oriented evaluation, later written up for a student scientific conference. | Python, PyTorch, NumPy, Pandas |
+| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | Dev-only HTTP MCP sidecar, который предоставляет `code_run` на persistent Jupyter kernels. Есть sessions, timeouts, output caps, artifact resources и result bundles. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
+| RuCortex backend_pipeline | Приватный рабочий проект: agentic RAG backend с ingestion, query API, OpenWebUI pipeline adapter, streaming responses, benchmark tooling и diagnostics. | Python, FastAPI, Qdrant, Docker, OpenWebUI, LiteLLM, Langfuse |
+| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Research bench для сравнения SMOTE-вариантов на imbalanced datasets с воспроизводимыми экспериментами и quality metrics. | Python, scikit-learn, imbalanced-learn, CatBoost/XGBoost |
+| GAN metrics research | Исследование метрик качества GAN и OCR-oriented evaluation, позже оформленное в публикацию для студенческой научной конференции. | Python, PyTorch, NumPy, Pandas |
 
-## Stack
+## Стек
 
 **LLM/RAG/backend:** Python, FastAPI, Qdrant, OpenWebUI, LiteLLM, Langfuse, MCP, Jupyter, Docker, PostgreSQL, Redis, SSE/streaming, REST API.
 
 **ML/data:** PyTorch, scikit-learn, NumPy, Pandas, CatBoost, XGBoost, ClearML, Matplotlib, Seaborn.
 
-**Other:** C++, Java, Git, Linux basics, pytest, LaTeX, SQL.
+**Другое:** C++, Java, Git, Linux basics, pytest, LaTeX, SQL.
 
-## Background
+## Опыт и образование
 
-- LLM Engineer, GenAI Lab, NPK "Electrostal" (2025 - present).
-- Java Developer Intern, SberTech (February 2024 - August 2024).
-- BSc in Applied Mathematics, Vologda State University (2022 - 2026).
+- LLM Engineer, Лаборатория GenAI, НПК "Электросталь" (2025 - настоящее время).
+- Java Developer Intern, SberTech (февраль 2024 - август 2024).
+- Бакалавриат по прикладной математике, Вологодский государственный университет (2022 - 2026).
 
-## Achievements
+## Достижения
 
-- ICPC: semifinal diploma, 2nd degree (2025).
-- ICPC: quarterfinal diploma, 2nd degree (2025).
-- Sber hackathon: 2nd place in Data Science track (2024).
-- Scientific publication on GAN quality metrics for text recognition (2025).
+- ICPC: полуфинал, диплом 2 степени (2025).
+- ICPC: четвертьфинал, диплом 2 степени (2025).
+- Хакатон Сбера: 2 место в треке Data Science (2024).
+- Научная публикация по метрикам качества GAN для распознавания текста (2025).
 
-## Contacts
+## Контакты
 
 - Email: [arseniykozhin@gmail.com](mailto:arseniykozhin@gmail.com)
 - Telegram: [@rssk1n](https://t.me/rssk1n)
