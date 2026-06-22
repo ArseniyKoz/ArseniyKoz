@@ -2,22 +2,44 @@
 
 # Arseniy Kozhin
 
-LLM/RAG Engineer building agentic RAG systems: agent behavior, tool routing, retrieval, answer quality, evals, observability and delivery.
+I work at the intersection of LLM/RAG systems, backend engineering, and applied mathematics. I am most interested in systems where a model does more than return text: it searches sources, calls tools, writes traces, goes through evals, and leaves enough evidence to debug a bad answer later.
 
-Currently working in the GenAI Lab at NPK "Electrostal" on a private RAG/agent platform: retrieval, tool routing, OpenWebUI integration, streaming responses, evals, observability and diagnostics.
+I currently work as an LLM Engineer in the GenAI Lab at NPK "Electrostal". I do not disclose internal product details in this public profile, but the public-safe description is: private RAG/agent platform, retrieval, tool routing, streaming responses, evals, observability, and behavior diagnostics.
 
-## What I Build
+## What I Like Building
 
-- Agentic RAG backends: query rewriting, search/fetch tools, streaming statuses, sources/citations and final-answer guardrails.
-- Evaluation loops: benchmark CLI/API/UI, Langfuse datasets/traces/scores, release diagnostics and RCA for agent behavior failures.
-- Developer tools for AI agents: MCP sidecars, Jupyter-backed code execution, artifact resources, smoke checks and execution guardrails.
+- RAG/agent backends where an answer has a traceable path: query rewrite, search, fetch, sources, tool calls, execution statuses, and final checks.
+- Evaluation loops for LLM systems: datasets, traces, scores, regression checks, and root-cause analysis for bad agent behavior.
+- Developer tools for AI agents: narrow MCP sidecars, controlled code execution, artifacts, and execution guardrails.
+- Numerical and ML experiments where reproducibility, tests, and honest limitations matter.
 
 ## Selected Work
 
-- [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) - dev-only MCP sidecar exposing `code_run` on top of persistent Jupyter kernels: sessions, timeouts, output caps, artifact resources and result bundles.
-- [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) - mathematical work on Monte Carlo methods: Walk on Planes / Walk on Spheres, implementation of a custom solution method, C++/Python core, tests, notebooks and proof-oriented docs.
-- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) - research bench for comparing SMOTE variants on imbalanced datasets with reproducible experiments, configs and CV data-leakage control.
-- [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) - pet project for decoding Morse code from `.opus` audio: CNN+BiGRU+CTC, Levenshtein distance = 1.28.
+### [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates)
+
+Mathematical and engineering work on Monte Carlo methods for an exterior Dirichlet problem: Walk on Planes / Walk on Spheres, C++/Python implementation, CLI, tests, notebooks, and proof-oriented docs.
+
+What it shows: I can take a research algorithm beyond a notebook and support it with code, validation, documentation, and mode comparisons.
+
+Where to look: `docs/`, `external_wop_cpp/tests/`, `external_wop/tests/`, `compare_wop_cpp_rmax_modes.ipynb`.
+
+### [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench)
+
+A benchmark suite for comparing SMOTE-family oversampling methods on imbalanced binary classification tasks. It includes config-driven runs, local method implementations, pytest tests, data-leakage safety checks, and persisted run artifacts.
+
+What it shows: I can build a reproducible ML benchmark where results are backed by configs, tests, and saved artifacts.
+
+Where to look: `configs/`, `src/methods/classic/`, `tests/`, `pyproject.toml`.
+
+### [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor)
+
+A small MCP sidecar for local agent workflows: `code_run` on top of persistent Jupyter kernels, sessions, timeouts, output caps, and artifact resources.
+
+What it shows: interest in AI developer tooling and in giving agents a constrained executable environment.
+
+### [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder)
+
+An audio ML project for recognizing Morse code from `.opus` files. The focus is not a production service, but a full ML pass: audio preparation, baseline, CNN/RNN model, and quality evaluation.
 
 ## Stack
 

@@ -2,22 +2,44 @@
 
 # Арсений Кожин
 
-LLM/RAG Engineer. Строю агентные RAG-системы: поведение агента, маршрутизацию инструментов, retrieval, качество ответов, evals, observability и delivery.
+Я инженер на стыке LLM/RAG, backend и прикладной математики. Больше всего мне интересны системы, где модель не просто отвечает текстом, а работает внутри проверяемого контура: ищет источники, вызывает инструменты, пишет трассы, проходит evals и дает результат, который можно разобрать после сбоя.
 
-Сейчас работаю в Лаборатории GenAI НПК "Электросталь": занимаюсь закрытой RAG/agent platform, retrieval, tool routing, OpenWebUI integration, streaming responses, evals, observability и diagnostics.
+Сейчас работаю LLM Engineer в Лаборатории GenAI НПК "Электросталь". В открытом профиле не раскрываю внутренние детали продукта, но область работы публично описываю так: закрытая RAG/agent platform, retrieval, tool routing, streaming responses, evals, observability и диагностика поведения.
 
-## Что я строю
+## Что мне интересно строить
 
-- Агентные RAG backends: query rewriting, search/fetch tools, streaming statuses, sources/citations и guardrails для финального ответа.
-- Evaluation loops: benchmark CLI/API/UI, Langfuse datasets/traces/scores, диагностика релизов и RCA для сбоев агентного поведения.
-- Developer tools для AI agents: MCP sidecars, Jupyter-backed code execution, artifact resources, smoke checks и execution guardrails.
+- RAG/agent backends, где у ответа есть маршрут: rewrite запроса, поиск, fetch, источники, tool calls, статусы выполнения и финальная проверка.
+- Evaluation loops для LLM-систем: datasets, traces, scores, regression checks и разбор причин, почему агент дал плохой ответ.
+- Developer tools для AI agents: узкие MCP sidecars, controlled code execution, artifacts и guardrails вокруг выполнения.
+- Численные и ML-эксперименты, где важны воспроизводимость, тесты и честное описание ограничений.
 
 ## Избранные работы
 
-- [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) - dev-only MCP sidecar для `code_run` поверх persistent Jupyter kernels: sessions, timeouts, output caps, artifact resources и result bundles.
-- [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) - математическая работа по Monte Carlo methods: Walk on Planes / Walk on Spheres, реализация собственного метода решения, C++/Python core, tests, notebooks и proof-oriented docs.
-- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) - research bench для сравнения SMOTE-вариантов на imbalanced datasets с воспроизводимыми экспериментами, конфигами и контролем data leakage в CV.
-- [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) - pet project для декодирования азбуки Морзе из `.opus` audio: CNN+BiGRU+CTC, Levenshtein distance = 1.28.
+### [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates)
+
+Математико-инженерная работа по Monte Carlo методам для внешней задачи Дирихле: Walk on Planes / Walk on Spheres, C++/Python реализация, CLI, tests, notebooks и proof-oriented docs.
+
+Что показывает: умею доводить исследовательский алгоритм до кода с проверками, документацией и сравнением режимов, а не оставлять его только в notebook.
+
+Где смотреть: `docs/`, `external_wop_cpp/tests/`, `external_wop/tests/`, `compare_wop_cpp_rmax_modes.ipynb`.
+
+### [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench)
+
+Стенд для сравнения oversampling-методов семейства SMOTE на imbalanced binary classification задачах. В проекте есть config-driven запуск, локальные реализации методов, pytest-тесты, safety checks против data leakage и сохранение run artifacts.
+
+Что показывает: умею строить воспроизводимый ML-бенчмарк, где результат можно проверить через конфиги, тесты и сохраненные артефакты.
+
+Где смотреть: `configs/`, `src/methods/classic/`, `tests/`, `pyproject.toml`.
+
+### [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor)
+
+Небольшой MCP sidecar для локальных agent workflows: `code_run` поверх persistent Jupyter kernels, sessions, timeouts, output caps и artifact resources.
+
+Что показывает: интерес к AI developer tooling и к тому, как безопасно давать агенту ограниченное исполняемое окружение.
+
+### [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder)
+
+Audio ML проект по распознаванию азбуки Морзе из `.opus` файлов. В фокусе не production-сервис, а полный ML-проход: подготовка аудио, baseline, CNN/RNN модель и оценка качества.
 
 ## Стек
 
