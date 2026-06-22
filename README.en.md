@@ -16,8 +16,8 @@ Currently working in the GenAI Lab at NPK "Electrostal". My main focus is RuCort
 
 - [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) - dev-only MCP sidecar exposing `code_run` on top of persistent Jupyter kernels: sessions, timeouts, output caps, artifact resources and result bundles.
 - RuCortex - private work project: agentic RAG backend with ingestion, query API, OpenWebUI pipeline adapter, streaming responses, benchmark tooling and diagnostics.
-- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) - research bench for comparing SMOTE variants on imbalanced datasets with reproducible experiments and quality metrics.
-- [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) - pet project for decoding Morse code from `.opus` audio with PyTorch.
+- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) - research bench for comparing SMOTE variants on imbalanced datasets with reproducible experiments, configs and CV data-leakage control.
+- [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) - pet project for decoding Morse code from `.opus` audio: CNN+BiGRU+CTC, Levenshtein distance = 1.28.
 
 ## Stack
 
@@ -76,8 +76,9 @@ Currently working in the GenAI Lab at NPK "Electrostal". My main focus is RuCort
 
 - ICPC: semifinal diploma, 2nd degree (2025).
 - ICPC: quarterfinal diploma, 2nd degree (2025).
+- Publication at an international scientific-practical conference on GAN quality metrics for text recognition (2025).
 - Sber hackathon: 2nd place in Data Science track (2024).
-- Scientific publication on GAN quality metrics for text recognition (2025).
+- ICPC: quarterfinal diploma, 3rd degree (2024).
 
 ## Contacts
 

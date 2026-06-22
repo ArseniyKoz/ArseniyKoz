@@ -16,8 +16,8 @@ LLM/RAG Engineer. Строю агентные RAG-системы: поведен
 
 - [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) - dev-only MCP sidecar для `code_run` поверх persistent Jupyter kernels: sessions, timeouts, output caps, artifact resources и result bundles.
 - RuCortex - закрытый рабочий проект: agentic RAG backend с ingestion, query API, OpenWebUI pipeline adapter, streaming responses, benchmark tooling и diagnostics.
-- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) - research bench для сравнения SMOTE-вариантов на imbalanced datasets с воспроизводимыми экспериментами и quality metrics.
-- [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) - pet project для декодирования азбуки Морзе из `.opus` audio с использованием PyTorch.
+- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) - research bench для сравнения SMOTE-вариантов на imbalanced datasets с воспроизводимыми экспериментами, конфигами и контролем data leakage в CV.
+- [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) - pet project для декодирования азбуки Морзе из `.opus` audio: CNN+BiGRU+CTC, Levenshtein distance = 1.28.
 
 ## Стек
 
@@ -76,8 +76,9 @@ LLM/RAG Engineer. Строю агентные RAG-системы: поведен
 
 - ICPC: полуфинал, диплом 2 степени (2025).
 - ICPC: четвертьфинал, диплом 2 степени (2025).
+- Публикация в международной научно-практической конференции по метрикам качества GAN для распознавания текста (2025).
 - Хакатон Сбера: 2 место в треке Data Science (2024).
-- Научная публикация по метрикам качества GAN для распознавания текста (2025).
+- ICPC: четвертьфинал, диплом 3 степени (2024).
 
 ## Контакты
 
