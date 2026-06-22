@@ -4,7 +4,7 @@
 
 LLM/RAG Engineer building agentic RAG systems: agent behavior, tool routing, retrieval, answer quality, evals, observability and delivery.
 
-Currently working in the GenAI Lab at NPK "Electrostal". My main focus is RuCortex: a private RAG/agent workflow platform built with FastAPI, Qdrant, OpenWebUI, LiteLLM, Langfuse and Docker.
+Currently working in the GenAI Lab at NPK "Electrostal" on a private RAG/agent platform: retrieval, tool routing, OpenWebUI integration, streaming responses, evals, observability and diagnostics.
 
 ## What I Build
 
@@ -15,7 +15,7 @@ Currently working in the GenAI Lab at NPK "Electrostal". My main focus is RuCort
 ## Selected Work
 
 - [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) - dev-only MCP sidecar exposing `code_run` on top of persistent Jupyter kernels: sessions, timeouts, output caps, artifact resources and result bundles.
-- RuCortex - private work project: agentic RAG backend with ingestion, query API, OpenWebUI pipeline adapter, streaming responses, benchmark tooling and diagnostics.
+- [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) - mathematical work on Monte Carlo methods: Walk on Planes / Walk on Spheres, implementation of a custom solution method, C++/Python core, tests, notebooks and proof-oriented docs.
 - [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) - research bench for comparing SMOTE variants on imbalanced datasets with reproducible experiments, configs and CV data-leakage control.
 - [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) - pet project for decoding Morse code from `.opus` audio: CNN+BiGRU+CTC, Levenshtein distance = 1.28.
 

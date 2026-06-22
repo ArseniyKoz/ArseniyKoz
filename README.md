@@ -4,7 +4,7 @@
 
 LLM/RAG Engineer. Строю агентные RAG-системы: поведение агента, маршрутизацию инструментов, retrieval, качество ответов, evals, observability и delivery.
 
-Сейчас работаю в Лаборатории GenAI НПК "Электросталь". Основной фокус - RuCortex: закрытая платформа для RAG/agent workflows на FastAPI, Qdrant, OpenWebUI, LiteLLM, Langfuse и Docker.
+Сейчас работаю в Лаборатории GenAI НПК "Электросталь": занимаюсь закрытой RAG/agent platform, retrieval, tool routing, OpenWebUI integration, streaming responses, evals, observability и diagnostics.
 
 ## Что я строю
 
@@ -15,7 +15,7 @@ LLM/RAG Engineer. Строю агентные RAG-системы: поведен
 ## Избранные работы
 
 - [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) - dev-only MCP sidecar для `code_run` поверх persistent Jupyter kernels: sessions, timeouts, output caps, artifact resources и result bundles.
-- RuCortex - закрытый рабочий проект: agentic RAG backend с ingestion, query API, OpenWebUI pipeline adapter, streaming responses, benchmark tooling и diagnostics.
+- [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) - математическая работа по Monte Carlo methods: Walk on Planes / Walk on Spheres, реализация собственного метода решения, C++/Python core, tests, notebooks и proof-oriented docs.
 - [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) - research bench для сравнения SMOTE-вариантов на imbalanced datasets с воспроизводимыми экспериментами, конфигами и контролем data leakage в CV.
 - [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) - pet project для декодирования азбуки Морзе из `.opus` audio: CNN+BiGRU+CTC, Levenshtein distance = 1.28.
 
