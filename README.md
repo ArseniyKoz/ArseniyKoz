@@ -2,24 +2,22 @@
 
 # Арсений Кожин
 
-LLM/RAG Engineer. Отвечаю за продуктовую логику и качество agentic RAG workflows: поведение агента, маршрутизацию инструментов, retrieval, качество финального ответа, evals, observability и delivery.
+LLM/RAG Engineer. Строю агентные RAG-системы: поведение агента, маршрутизацию инструментов, retrieval, качество ответов, evals, observability и delivery.
 
-Сейчас работаю в Лаборатории GenAI НПК "Электросталь". Основной фокус - RuCortex: приватный FastAPI backend для RAG/agent workflows с Qdrant, OpenWebUI, LiteLLM, Langfuse, Docker и benchmark tooling.
+Сейчас работаю в Лаборатории GenAI НПК "Электросталь". Основной фокус - RuCortex: закрытая платформа для RAG/agent workflows на FastAPI, Qdrant, OpenWebUI, LiteLLM, Langfuse и Docker.
 
 ## Что я строю
 
-- Agentic RAG backends: query rewriting, RAG search tools, document fetch, streaming statuses, sources/citations и guardrails для финального ответа.
-- Evaluation loops: benchmark CLI/API/UI, Langfuse datasets/traces/scores, release-aware diagnostics и RCA для agent failures.
+- Агентные RAG backends: query rewriting, search/fetch tools, streaming statuses, sources/citations и guardrails для финального ответа.
+- Evaluation loops: benchmark CLI/API/UI, Langfuse datasets/traces/scores, диагностика релизов и RCA для сбоев агентного поведения.
 - Developer tools для AI agents: MCP sidecars, Jupyter-backed code execution, artifact resources, smoke checks и execution guardrails.
 
 ## Избранные работы
 
-| Проект | Что это | Стек |
-|---|---|---|
-| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | Dev-only HTTP MCP sidecar, который предоставляет `code_run` на persistent Jupyter kernels. Есть sessions, timeouts, output caps, artifact resources и result bundles. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
-| RuCortex backend_pipeline | Приватный рабочий проект: agentic RAG backend с ingestion, query API, OpenWebUI pipeline adapter, streaming responses, benchmark tooling и diagnostics. | Python, FastAPI, Qdrant, Docker, OpenWebUI, LiteLLM, Langfuse |
-| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Research bench для сравнения SMOTE-вариантов на imbalanced datasets с воспроизводимыми экспериментами и quality metrics. | Python, scikit-learn, imbalanced-learn, CatBoost/XGBoost |
-| GAN metrics research | Исследование метрик качества GAN и OCR-oriented evaluation, позже оформленное в публикацию для студенческой научной конференции. | Python, PyTorch, NumPy, Pandas |
+- [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) - dev-only MCP sidecar для `code_run` поверх persistent Jupyter kernels: sessions, timeouts, output caps, artifact resources и result bundles.
+- RuCortex - закрытый рабочий проект: agentic RAG backend с ingestion, query API, OpenWebUI pipeline adapter, streaming responses, benchmark tooling и diagnostics.
+- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) - research bench для сравнения SMOTE-вариантов на imbalanced datasets с воспроизводимыми экспериментами и quality metrics.
+- [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) - pet project для декодирования азбуки Морзе из `.opus` audio с использованием PyTorch.
 
 ## Стек
 
