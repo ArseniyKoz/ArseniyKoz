@@ -2,88 +2,57 @@
 
 # Arseniy Kozhin
 
-Agent Engineer/Researcher. Отвечаю за продуктовую логику и качество agentic backend: поведение агента, tool routing, retrieval, финальный ответ, источники, evals и observability.
+Agent / AI Engineer. Работаю с агентными backend-системами: agent core, tool runtime, RAG, eval/observability и локальный inference.
 
-Сейчас работаю в Лаборатории GenAI НПК "Электросталь". Основной фокус - RuCortex: закрытый FastAPI backend для RAG/agent workflows с Qdrant, OpenWebUI, LiteLLM, Langfuse, Docker и benchmark tooling.
+Сейчас я в Лаборатории GenAI НПК "Электросталь". Моя зона - поведение корпоративного AI-агента: как он выбирает инструменты, собирает контекст, возвращает ответ с источниками и как мы проверяем, что изменения не ухудшили качество.
+
+## Что смотреть
+
+| Линия доказательств | Что показывает | Где смотреть |
+|---|---|---|
+| Production agent work | Закрытая корпоративная работа: agent loop, tool routing, RAG, citations, Langfuse traces, eval runs, локальный inference. | Резюме и описание опыта ниже |
+| Public tooling | Умею выносить агентные инструменты в понятный dev runtime, а не только писать notebooks. | [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) |
+| Research / math / ML | Могу доводить исследовательские задачи до проверяемого кода, тестов, экспериментов и документации. | [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench), [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates), [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) |
 
 ## Инженерный фокус
 
-**Agent core / harness.** Я занимаюсь логикой agentic backend: как агент собирает контекст, выбирает инструменты, вызывает `query_rewrite`, `rag_search` и `document_fetch`, стримит статусы и возвращает ответ с источниками. Моя зона здесь - не только отдельные tools, а весь контур поведения: prompt contract, tool routing, ограничения на шаги агента, OpenWebUI-интеграция и developer harness, через который это можно проверять и отлаживать.
+**Agent core / tools.** Проектирую цикл агента, tool runtime, MCP-интеграции, prompt/tool contracts, streaming statuses и ответы с источниками. Для меня важна не только работа отдельного tool, а поведение всего сценария.
 
-**Eval / observation.** Я строю контур, который показывает, стал агент лучше или хуже после изменения. Это bench datasets, run profiles, regression checks, Langfuse traces/scores, сравнение запусков и RCA по провалам: неправильный tool path, слабый retrieval, плохая groundedness, latency или runtime error. Важная часть работы - сделать качество ответа наблюдаемым, а не оценивать его на глаз.
+**RAG / eval / observability.** Строю контур, где качество ответа можно проверять: golden datasets, regression runs, RAG metrics, tool-use checks, LLM-as-judge, Langfuse traces/scores и разбор деградаций.
 
-**LLM inference.** Я работаю с тем, как модели подключаются и ведут себя в реальном backend: LiteLLM routing, streaming, TTFT, token usage, prompt-cache signals и локальные эксперименты с vLLM/llama.cpp/Ollama-compatible inference. Цель - понимать не только "какая модель отвечает", но и как ее latency, streaming behavior и routing влияют на агентный сценарий.
+**Backend / inference.** Работаю с Python/FastAPI backend, Qdrant, PostgreSQL, Redis, Docker, LiteLLM, vLLM и llama.cpp. Смотрю на latency, TTFT, token usage, prompt cache и routing как на часть продуктового поведения агента.
 
 ## Избранные проекты
 
-| Проект | Что доказывает | Стек |
+| Проект | Роль в профиле | Стек |
 |---|---|---|
-| RuCortex / backend_pipeline (private) | Agentic RAG backend: ingestion/query API, OpenWebUI adapter, tool-based agent loop, streaming, sources и Langfuse tracing. Моя зона - логика агента, качество ответа, eval/bench и диагностика изменений. | Python, FastAPI, Qdrant, Docker, OpenWebUI, LiteLLM, Langfuse, SSE |
-| Benchmark/eval контур RuCortex | Контур проверки agentic RAG и direct RAG baseline: CLI/API/UI, profiles, Langfuse datasets/traces/scores, release_id, profile gates, compare и RCA buckets. | Python, PostgreSQL, Langfuse, pytest, Node tests, browser UI |
-| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | Dev-only HTTP MCP sidecar: `code_run` поверх persistent Jupyter kernels, sessions, timeouts, output caps, artifact resources и result bundles. Helper для разработки, не sandbox для недоверенного кода. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
-| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Исследовательский стенд для сравнения вариантов SMOTE: воспроизводимые эксперименты, метрики качества и визуализация результатов. | Python, scikit-learn, imbalanced-learn, CatBoost, XGBoost |
-| GAN metrics research | Исследование метрик качества GAN и OCR-oriented evaluation; результат оформлен в научную публикацию по материалам студенческой конференции. | Python, PyTorch, NumPy, Pandas |
-
-Ранние ML-проекты и учебные эксперименты оставляю как историю, но не ставлю рядом с текущими RAG/eval/backend работами.
+| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Воспроизводимый ML benchmark: config-driven runs, safety checks против data leakage, сохраняемые JSON/CSV/NPZ артефакты и pytest-контракты. | Python, scikit-learn, imbalanced-learn, CatBoost, XGBoost, ClearML |
+| [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) | Численные Monte Carlo методы для внешней задачи Дирихле: C++ core, Python reference, CLI, tests, notebooks и proof-oriented docs. | C++, Python, Jupyter, Monte Carlo |
+| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | Dev-only MCP sidecar: `code_run` поверх persistent Jupyter kernels, sessions, timeouts, output caps и artifact resources. Не sandbox для недоверенного кода. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
+| [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) | Pet-проект по декодированию азбуки Морзе из `.opus`-аудио: CTC/LSTM baseline и CNN+BiGRU+CTC pipeline. | Python, PyTorch, audio ML |
+| [ECC](https://github.com/ArseniyKoz/ECC) | Учебный материал по эллиптическим кривым и криптографии. | Python, math, cryptography |
 
 ## Стек
 
-**Языки и база**
+**Agent / RAG:** MCP, Agent Skills, RAG tools, citations, Langfuse, LiteLLM, OpenWebUI, Qdrant.
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+**Backend:** Python, FastAPI, PostgreSQL, Redis, Docker, REST API, SSE/streaming, pytest.
 
-**Agent harness**
+**Inference:** vLLM, llama.cpp, local LLM inference, TTFT, prompt cache, quantization, speculative decoding.
 
-![OpenWebUI](https://img.shields.io/badge/OpenWebUI-111111?style=for-the-badge)
-![LiteLLM](https://img.shields.io/badge/LiteLLM-2E6BFF?style=for-the-badge)
-![Langfuse](https://img.shields.io/badge/Langfuse-111111?style=for-the-badge)
-![MCP](https://img.shields.io/badge/MCP-5C2D91?style=for-the-badge)
-![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge)
-![vLLM](https://img.shields.io/badge/vLLM-2E7D32?style=for-the-badge)
-
-**Backend / Data**
-
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-02569B?style=for-the-badge)
-![SSE](https://img.shields.io/badge/SSE-FF6F00?style=for-the-badge)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-
-**ML / Data Science**
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![CatBoost](https://img.shields.io/badge/CatBoost-FFCC00?style=for-the-badge)
-![XGBoost](https://img.shields.io/badge/XGBoost-1F8ACB?style=for-the-badge)
-![ClearML](https://img.shields.io/badge/ClearML-00AEEF?style=for-the-badge)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
-![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge)
-
-**Инструменты и окружение**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-111111?style=for-the-badge&logo=linux&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
+**ML / Data:** PyTorch, scikit-learn, NumPy, Pandas, CatBoost, XGBoost, Matplotlib, Seaborn.
 
 ## Опыт и образование
 
-- **LLM Engineer, Лаборатория GenAI НПК "Электросталь"** - 2025 - настоящее время.
+- **Agent / AI Engineer, Лаборатория GenAI НПК "Электросталь"** - 2025 - настоящее время.
 - **Бакалавриат, прикладная математика, Вологодский государственный университет** - 2022 - 2026.
 
 ## Достижения
 
 - ICPC: диплом II степени полуфинала Северной Евразии (2025).
 - ICPC: диплом II степени четвертьфинала (2025).
-- Научная публикация: метрики оценки качества генеративно-состязательных сетей в задаче распознавания текста (2025).
-- Хакатон Сбера: 2 место в треке Data Science (2024).
+- Научная публикация: анализ количественных метрик оценки генеративно-состязательных сетей (2025).
+- Хакатон Сбера: 2 место (2024).
 
 ## Контакты
 
