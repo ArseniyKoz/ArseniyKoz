@@ -94,10 +94,10 @@ I currently work in the GenAI Lab at NPK "Electrostal". My scope is the behavior
 
 ## Achievements
 
-- ICPC: Northern Eurasia semifinal diploma, 2nd degree (2025).
-- ICPC: quarterfinal diploma, 2nd degree (2025).
-- Scientific publication on quantitative metrics for generative adversarial networks (2025).
-- Sber hackathon: 2nd place (2024).
+- [ICPC](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): Northern Eurasia semifinal diploma, 2nd degree (2025).
+- [ICPC](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): quarterfinal diploma, 2nd degree (2025).
+- [Scientific publication](https://drive.google.com/file/d/1OaIeC-db5_pM4eg55557coUdI50LkAlV/view): quantitative metrics for generative adversarial networks (2025).
+- [Sber hackathon](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): 2nd place (2024).
 
 ## Contacts
 

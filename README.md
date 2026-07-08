@@ -94,10 +94,10 @@ Agent / AI Engineer. Работаю с агентными backend-система
 
 ## Достижения
 
-- ICPC: диплом II степени полуфинала Северной Евразии (2025).
-- ICPC: диплом II степени четвертьфинала (2025).
-- Научная публикация: анализ количественных метрик оценки генеративно-состязательных сетей (2025).
-- Хакатон Сбера: 2 место (2024).
+- [ICPC](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): диплом II степени полуфинала Северной Евразии (2025).
+- [ICPC](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): диплом II степени четвертьфинала (2025).
+- [Научная публикация](https://drive.google.com/file/d/1OaIeC-db5_pM4eg55557coUdI50LkAlV/view): анализ количественных метрик оценки генеративно-состязательных сетей (2025).
+- [Хакатон Сбера](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): 2 место (2024).
 
 ## Контакты
 
