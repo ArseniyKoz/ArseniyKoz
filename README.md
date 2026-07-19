@@ -2,7 +2,9 @@
 
 # Arseniy Kozhin
 
-Agent / AI Engineer с математическим бэкграундом. Занимаюсь архитектурой AI-агентов: agent core, tools/MCP, evaluation/observability и local inference. На GitHub публикую инструменты для разработки AI-систем, воспроизводимые ML-эксперименты и реализации численных методов.
+Agent / AI Engineer с математическим бэкграундом. Занимаюсь архитектурой AI-агентов: agent core, tools/MCP, evaluation/observability и local inference. 
+
+Также занимаюсь статистическим моделированием и созданием тестовых стендов для исследований.
 
 ## Избранные открытые проекты
 
