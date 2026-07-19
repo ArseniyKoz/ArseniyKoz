@@ -2,35 +2,13 @@
 
 # Arseniy Kozhin
 
-Agent / AI Engineer. Работаю с агентными backend-системами: agent core, tool runtime, RAG, eval/observability и локальный inference.
+Agent / AI Engineer с математическим бэкграундом. Занимаюсь архитектурой AI-агентов: agent core, tools/MCP, evaluation/observability и local inference. На GitHub публикую инструменты для разработки AI-систем, воспроизводимые ML-эксперименты и реализации численных методов.
 
-Сейчас я в Лаборатории GenAI НПК "Электросталь". Моя зона - поведение корпоративного AI-агента: как он выбирает инструменты, собирает контекст, возвращает ответ с источниками и как мы проверяем, что изменения не ухудшили качество.
+## Избранные открытые проекты
 
-## Что смотреть
-
-| Линия доказательств | Что показывает | Где смотреть |
-|---|---|---|
-| Production agent work | Закрытая корпоративная работа: agent loop, tool routing, RAG, citations, Langfuse traces, eval runs, локальный inference. | Резюме и описание опыта ниже |
-| Public tooling | Умею выносить агентные инструменты в понятный dev runtime, а не только писать notebooks. | [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) |
-| Research / math / ML | Могу доводить исследовательские задачи до проверяемого кода, тестов, экспериментов и документации. | [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench), [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates), [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) |
-
-## Инженерный фокус
-
-**Agent core / tools.** Проектирую цикл агента, tool runtime, MCP-интеграции, prompt/tool contracts, streaming statuses и ответы с источниками. Для меня важна не только работа отдельного tool, а поведение всего сценария.
-
-**RAG / eval / observability.** Строю контур, где качество ответа можно проверять: golden datasets, regression runs, RAG metrics, tool-use checks, LLM-as-judge, Langfuse traces/scores и разбор деградаций.
-
-**Backend / inference.** Работаю с Python/FastAPI backend, Qdrant, PostgreSQL, Redis, Docker, LiteLLM, vLLM и llama.cpp. Смотрю на latency, TTFT, token usage, prompt cache и routing как на часть продуктового поведения агента.
-
-## Избранные проекты
-
-| Проект | Роль в профиле | Стек |
-|---|---|---|
-| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Воспроизводимый ML benchmark: config-driven runs, safety checks против data leakage, сохраняемые JSON/CSV/NPZ артефакты и pytest-контракты. | Python, scikit-learn, imbalanced-learn, CatBoost, XGBoost, ClearML |
-| [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) | Численные Monte Carlo методы для внешней задачи Дирихле: C++ core, Python reference, CLI, tests, notebooks и proof-oriented docs. | C++, Python, Jupyter, Monte Carlo |
-| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | Dev-only MCP sidecar: `code_run` поверх persistent Jupyter kernels, sessions, timeouts, output caps и artifact resources. Не sandbox для недоверенного кода. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
-| [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) | Pet-проект по декодированию азбуки Морзе из `.opus`-аудио: CTC/LSTM baseline и CNN+BiGRU+CTC pipeline. | Python, PyTorch, audio ML |
-| [ECC](https://github.com/ArseniyKoz/ECC) | Учебный материал по эллиптическим кривым и криптографии. | Python, math, cryptography |
+- [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) — MCP-инструмент для выполнения кода в persistent Jupyter kernels с управлением сессиями, таймаутами и артефактами.
+- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) — воспроизводимый стенд для сравнения методов балансировки данных и проверки ML-экспериментов.
+- [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) — реализация Monte Carlo методов для внешней задачи Дирихле на C++ и Python.
 
 ## Стек
 
@@ -87,15 +65,13 @@ Agent / AI Engineer. Работаю с агентными backend-система
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
 
-## Опыт и образование
+## Образование
 
-- **Agent / AI Engineer, Лаборатория GenAI НПК "Электросталь"** - 2025 - настоящее время.
 - **Бакалавриат, прикладная математика, Вологодский государственный университет** - 2022 - 2026.
 
 ## Достижения
 
-- [ICPC](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): диплом II степени полуфинала Северной Евразии (2025).
-- [ICPC](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): диплом II степени четвертьфинала (2025).
+- [ICPC/NEF](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): диплом II степени четвертьфинала и полуфинала Северной Евразии (2025).
 - [Научная публикация](https://drive.google.com/file/d/1OaIeC-db5_pM4eg55557coUdI50LkAlV/view): анализ количественных метрик оценки генеративно-состязательных сетей (2025).
 - [Хакатон Сбера](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): 2 место (2024).
 

@@ -2,35 +2,13 @@
 
 # Arseniy Kozhin
 
-Agent / AI Engineer. I work on agentic backend systems: agent core, tool runtime, RAG, eval/observability, and local inference.
+Agent / AI Engineer with a background in applied mathematics. I work on AI-agent architecture: agent core, tools/MCP, evaluation/observability, and local inference. On GitHub, I publish AI developer tools, reproducible ML experiments, and numerical-method implementations.
 
-I currently work in the GenAI Lab at NPK "Electrostal". My scope is the behavior of a corporate AI agent: how it chooses tools, builds context, returns answers with sources, and how we check that changes do not make answer quality worse.
+## Selected Open-Source Projects
 
-## What To Look At
-
-| Evidence lane | What it shows | Where to look |
-|---|---|---|
-| Production agent work | Closed corporate work: agent loop, tool routing, RAG, citations, Langfuse traces, eval runs, and local inference. | Resume and experience summary below |
-| Public tooling | I can turn agent-facing tools into a clear dev runtime, not only notebooks. | [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) |
-| Research / math / ML | I can take research tasks to verifiable code, tests, experiments, and documentation. | [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench), [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates), [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) |
-
-## Engineering Focus
-
-**Agent core / tools.** I design agent loops, tool runtime, MCP integrations, prompt/tool contracts, streaming statuses, and answers with sources. I care about the whole behavior path, not only one tool call.
-
-**RAG / eval / observability.** I build the loop for checking answer quality: golden datasets, regression runs, RAG metrics, tool-use checks, LLM-as-judge, Langfuse traces/scores, and regression analysis.
-
-**Backend / inference.** I work with Python/FastAPI backend, Qdrant, PostgreSQL, Redis, Docker, LiteLLM, vLLM, and llama.cpp. I treat latency, TTFT, token usage, prompt cache, and routing as part of product behavior.
-
-## Selected Projects
-
-| Project | Role in the profile | Stack |
-|---|---|---|
-| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Reproducible ML benchmark: config-driven runs, data-leakage safety checks, persisted JSON/CSV/NPZ artifacts, and pytest contracts. | Python, scikit-learn, imbalanced-learn, CatBoost, XGBoost, ClearML |
-| [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) | Numerical Monte Carlo methods for an exterior Dirichlet problem: C++ core, Python reference, CLI, tests, notebooks, and proof-oriented docs. | C++, Python, Jupyter, Monte Carlo |
-| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | Dev-only MCP sidecar: `code_run` backed by persistent Jupyter kernels, sessions, timeouts, output caps, and artifact resources. Not a sandbox for untrusted code. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
-| [Morze-decoder](https://github.com/ArseniyKoz/Morze-decoder) | Pet project for decoding Morse code from `.opus` audio: CTC/LSTM baseline and CNN+BiGRU+CTC pipeline. | Python, PyTorch, audio ML |
-| [ECC](https://github.com/ArseniyKoz/ECC) | Coursework material on elliptic curves and cryptography. | Python, math, cryptography |
+- [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) — an MCP tool for running code in persistent Jupyter kernels with session, timeout, and artifact management.
+- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) — a reproducible benchmark for comparing data-balancing methods and validating ML experiments.
+- [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) — C++ and Python implementations of Monte Carlo methods for an exterior Dirichlet problem.
 
 ## Stack
 
@@ -87,15 +65,13 @@ I currently work in the GenAI Lab at NPK "Electrostal". My scope is the behavior
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=for-the-badge&logo=latex&logoColor=white)
 
-## Experience and Education
+## Education
 
-- **Agent / AI Engineer, GenAI Lab, NPK "Electrostal"** - 2025 - present.
 - **BSc in Applied Mathematics, Vologda State University** - 2022 - 2026.
 
 ## Achievements
 
-- [ICPC](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): Northern Eurasia semifinal diploma, 2nd degree (2025).
-- [ICPC](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): quarterfinal diploma, 2nd degree (2025).
+- [ICPC/NEF](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): 2nd-degree diplomas at the quarterfinal and Northern Eurasia semifinal stages (2025).
 - [Scientific publication](https://drive.google.com/file/d/1OaIeC-db5_pM4eg55557coUdI50LkAlV/view): quantitative metrics for generative adversarial networks (2025).
 - [Sber hackathon](https://drive.google.com/drive/folders/1hG1wawnaO2ttI6T6_KWWJjLcB5nkk5PA): 2nd place (2024).
 
