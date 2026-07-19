@@ -6,9 +6,11 @@ Agent / AI Engineer с математическим бэкграундом. За
 
 ## Избранные открытые проекты
 
-- [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) — MCP-инструмент для выполнения кода в persistent Jupyter kernels с управлением сессиями, таймаутами и артефактами.
-- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) — воспроизводимый стенд для сравнения методов балансировки данных и проверки ML-экспериментов.
-- [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) — реализация Monte Carlo методов для внешней задачи Дирихле на C++ и Python.
+| Проект | Описание | Стек |
+|---|---|---|
+| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | MCP-инструмент для выполнения кода в persistent Jupyter kernels с управлением сессиями, таймаутами и артефактами. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
+| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | Воспроизводимый стенд для сравнения методов балансировки данных и проверки ML-экспериментов. | Python, scikit-learn, imbalanced-learn, CatBoost, XGBoost, ClearML |
+| [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) | Реализация Monte Carlo методов для внешней задачи Дирихле на C++ и Python. | C++, Python, Jupyter, Monte Carlo |
 
 ## Стек
 

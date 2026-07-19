@@ -6,9 +6,11 @@ Agent / AI Engineer with a background in applied mathematics. I work on AI-agent
 
 ## Selected Open-Source Projects
 
-- [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) — an MCP tool for running code in persistent Jupyter kernels with session, timeout, and artifact management.
-- [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) — a reproducible benchmark for comparing data-balancing methods and validating ML experiments.
-- [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) — C++ and Python implementations of Monte Carlo methods for an exterior Dirichlet problem.
+| Project | Description | Stack |
+|---|---|---|
+| [just-jupyter-code-executor](https://github.com/ArseniyKoz/just-jupyter-code-executor) | An MCP tool for running code in persistent Jupyter kernels with session, timeout, and artifact management. | Python, MCP/FastMCP, Jupyter, Starlette/Uvicorn, Pydantic, pytest |
+| [SMOTE-test-bench](https://github.com/ArseniyKoz/SMOTE-test-bench) | A reproducible benchmark for comparing data-balancing methods and validating ML experiments. | Python, scikit-learn, imbalanced-learn, CatBoost, XGBoost, ClearML |
+| [Random_walk_on_plates](https://github.com/ArseniyKoz/Random_walk_on_plates) | C++ and Python implementations of Monte Carlo methods for an exterior Dirichlet problem. | C++, Python, Jupyter, Monte Carlo |
 
 ## Stack
 
